@@ -1,6 +1,6 @@
-# AniStream
+# AniStream API
 
-日本国内で配信されているアニメのスケジュール情報を提供する、静的なAPIリポジトリです。AniListの `anilist_id` に紐づけながら、ABEMA・dアニメストア・Netflix（JP）などの国内サブスクリプション配信情報を手動で補完します。  
+日本国内で配信されているアニメのスケジュール情報を提供する、静的なAPIリポジトリです。[AniList API](https://docs.anilist.co/)の `anilist_id` に紐づけながら、ABEMA・dアニメストア・Netflix（JP）などの国内サブスクリプション配信情報を手動で補完します。  
 > dアニメストアのみ対応が終わっています。(2025/6/25現在)
 
 ---
@@ -20,7 +20,7 @@
 
 静的ホスティングされた `.json` ファイルがAPIの役割を担います。
 
-例：`https://raw.githubusercontent.com/thrashem/AniStream/main/2025/summer.json`
+例：[raw.githubusercontent.com/thrashem/AniStream/main/2025/summer.json](https://raw.githubusercontent.com/thrashem/AniStream/main/2025/summer.json)
 
 JSON構造は以下の通りです（一部省略）：
 
