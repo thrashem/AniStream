@@ -1,3 +1,4 @@
+[
 {"anilist_id": 151799, "title": "New PANTY&STOCKING with GARTERBELT", "episodes": null, "start_date": "2025-07-10"},
 {"anilist_id": 154768, "title": "その着せ替え人形は恋をする Season 2", "episodes": null, "start_date": "2025-07-06"},
 {"anilist_id": 155838, "title": "強くてニューサーガ", "episodes": null, "start_date": "2025-07-03", "streaming": [{"first_air_date": "2025-07-02", "time": "26:45", "episodes": null, "platform": "d_anime", "platform_url": "https://animestore.docomo.ne.jp/", "url": "", "notes": "", "day_of_week": "Wednesday"}]},
@@ -96,4 +97,5 @@
 {"anilist_id": 193623, "title": "遠井さんは青春したい！『バカとスマホとロマンスと』", "episodes": 1, "start_date": "2025-07-18", "end_date": "2025-07-18"},
 {"anilist_id": 193707, "title": "無人駅 The Animation ", "episodes": null, "start_date": "2025-08-29"},
 {"anilist_id": 193883, "title": "ちびゴジラの逆襲(第3期)", "episodes": null, "start_date": "2025-07-02", "streaming": [{"first_air_date": "2025-07-02", "time": "07:30", "episodes": null, "platform": "d_anime", "platform_url": "https://animestore.docomo.ne.jp/", "url": "", "notes": "", "day_of_week": "Wednesday"}]},
-{"anilist_id": 194088, "title": "闇芝居 十五期 ", "episodes": null, "start_date": "2025-07-13"},
+{"anilist_id": 194088, "title": "闇芝居 十五期 ", "episodes": null, "start_date": "2025-07-13"}
+]
