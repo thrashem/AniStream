@@ -1,10 +1,3 @@
-"""
-sample/week_schedule.py
-
-指定した日（または実行日）を起点に、1週間分のアニメ配信スケジュールをMarkdown形式で出力します。
-配信データは GitHub にホストされた JSON（AniList + streaming補完）を参照します。
-"""
-
 import argparse
 from datetime import datetime, timedelta
 import json
@@ -39,28 +32,29 @@ except requests.RequestException as e:
     print(f"[ERROR] データ取得に失敗しました: {e}")
     exit(1)
 
-week_end = base_date + timedelta(days=7)
-
-# --- 掲載対象の抽出 ---
+# --- 掲載対象の抽出---
 for anime in data:
     for s in anime.get("streaming", []):
         if not all(k in s for k in ("first_air_date", "day_of_week", "time")):
             continue
         try:
-            first = datetime.strptime(s["first_air_date"], "%Y-%m-%d").date()
+            first_date = datetime.strptime(s["first_air_date"], "%Y-%m-%d").date()
         except ValueError:
             continue
-        if first > week_end:
-            continue
-        dow = s["day_of_week"]
-        if dow not in day_slots:
-            continue
-        day_slots[dow].append({
-            "id": anime.get("anilist_id") or anime.get("id"),
-            "title": anime.get("title"),
-            "time": s["time"],
-            "platform": s.get("platform")
-        })
+
+        for i in range(day_count):
+            date = base_date + timedelta(days=i)
+            if date.strftime("%A") != s["day_of_week"]:
+                continue
+            if date < first_date:
+                continue
+
+            day_slots[date.strftime("%A")].append({
+                "id": anime.get("anilist_id") or anime.get("id"),
+                "title": anime.get("title"),
+                "time": s["time"],
+                "platform": s.get("platform")
+            })
 
 # --- 並び替え ---
 for items in day_slots.values():
