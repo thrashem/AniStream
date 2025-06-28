@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>今週のアニメ配信一覧 AniStream</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📺 今週のアニメ配信一覧 AniStream</h1>
+
+  <div class="controls">
+    <label>シーズン:
+      <select id="seasonSelect">
+        <option value="2025/summer">2025 Summer</option>
+      </select>
+    </label>
+    <label>起点日:
+      <input type="date" id="dateSelect" />
+    </label>
+  </div>
+
+  <fieldset id="platformCheckboxes">
+    <legend>表示する配信サービス</legend>
+    <!-- チェックボックスはJSで生成 -->
+  </fieldset>
+
+  <button id="loadBtn">番組表を表示</button>
+
+  <hr />
+
+  <div id="result"></div>
+
+  <script src="js/viewer.js"></script>
+</body>
+</html>
