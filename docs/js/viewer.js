@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let platformMap = {};
 
-  // ✅ 初期日付を未指定なら今日にセット（JST基準）
   if (!dateInput.value) {
     const today = new Date();
     const y = today.getFullYear();
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     dateInput.value = `${y}-${m}-${d}`;
   }
 
-  // ✅ チェックボックス生成（label のみ使用）
   fetch("platforms.json").then(res => res.json()).then(map => {
     platformMap = map;
     const saved = JSON.parse(localStorage.getItem("platformPrefs") || "[]");
@@ -34,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ✅ 番組表表示処理
   loadBtn.addEventListener("click", () => {
     const season = seasonSelect.value;
     const startDate = new Date(dateInput.value);
@@ -90,15 +87,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const label = `${y}年${m}月${d}日(${w})`;
 
         const rows = day.entries.map(e => {
-          const text = platformMap[e.platform]?.label || e.platform;
-          const link = e.platform_url
-            ? `<a href="${e.platform_url}" target="_blank" rel="noopener">${text}</a>`
-            : text;
-          return `<tr><td>${e.id}</td><td>${e.title}</td><td>${e.time}</td><td>${link}</td></tr>`;
+          const anilistLink = e.id
+            ? `<a href="https://anilist.co/anime/${e.id}" target="_blank" rel="noopener">${e.id}</a>`
+            : e.id;
+          const platformText = platformMap[e.platform]?.label || e.platform;
+          const platformLink = e.platform_url
+            ? `<a href="${e.platform_url}" target="_blank" rel="noopener">${platformText}</a>`
+            : platformText;
+
+          return `<tr><td>${anilistLink}</td><td>${e.title}</td><td>${e.time}</td><td>${platformLink}</td></tr>`;
         }).join("");
 
         resultDiv.innerHTML += `<h3>${label}</h3><table>
-<tr><th>ID</th><th>Title</th><th>Time</th><th>Platform</th></tr>
+<tr><th>AniList ID</th><th>Title</th><th>Time</th><th>Platform</th></tr>
 ${rows}
 </table>`;
       }
