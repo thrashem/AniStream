@@ -14,6 +14,8 @@
 - `sample/week_schedule.py`  
   上記のJSONファイルをもとに、曜日ごとの週間スケジュール（Markdown形式）を出力するサンプルスクリプトです。
 
+- `docs/`  
+  曜日ごとの週間スケジュールを出力するサンプルサイトです。
 ---
 
 ## API仕様
@@ -68,6 +70,12 @@ python sample/week_schedule.py --from 2025-07-01 --output 2025-07-01.md
 - 曜日ごとに作品がまとめられたシンプルな一覧を生成します。
 
 ---
+
+## サンプルサイト
+
+静的API（`2025/*.json`）を利用するためのサンプルサイトです。
+
+[今週のアニメ配信一覧 AniStream](https://thrashem.github.io/AniStream/docs/)
 
 ## 方針と補足
 
