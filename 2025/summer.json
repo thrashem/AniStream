@@ -33,7 +33,7 @@
 {"anilist_id": 177120, "title": "忍者と殺し屋のふたりぐらし", "episodes": 12, "start_date": "2025-04-10", "end_date": "2025-06-26"},
 {"anilist_id": 177175, "title": "アークナイツ 焔燼曙明", "episodes": null, "start_date": "2025-07-04", "streaming": [{"first_air_date": "2025-07-04", "time": "25:00", "episodes": null, "platform": "d_anime", "platform_url": "https://animestore.docomo.ne.jp/", "url": "", "notes": "", "day_of_week": "Friday"}]},
 {"anilist_id": 177474, "title": "桃源暗鬼", "episodes": null, "start_date": "2025-07-11", "streaming": [{"first_air_date": "2025-07-14", "time": "24:00", "episodes": null, "platform": "d_anime", "platform_url": "https://animestore.docomo.ne.jp/", "url": "", "notes": "", "day_of_week": "Monday"}]},
-{"anilist_id": 177476, "title": "真･侍伝 YAIBA", "episodes": null, "start_date": "2025-04-05"},
+{"anilist_id": 177476, "title": "真･侍伝 YAIBA", "episodes": null, "start_date": "2025-04-05", "streaming": [{"first_air_date": "2025-06-30", "time": "", "episodes": null, "platform": "d_anime", "platform_url": "https://animestore.docomo.ne.jp/", "url": "", "notes": "", "day_of_week": "Monday"}]},
 {"anilist_id": 177509, "title": "かくして!! マキナさん！", "episodes": 12, "start_date": "2025-04-07", "end_date": "2025-06-23"},
 {"anilist_id": 177518, "title": "映画 おでかけ子ザメ とかいのおともだち", "episodes": 1, "start_date": "2025-08-22", "end_date": "2025-08-22"},
 {"anilist_id": 177633, "title": "MUZIK TIGER In the Forest", "episodes": 30, "start_date": "2025-04-02"},
@@ -109,7 +109,7 @@
 {"anilist_id": 185001, "title": "知らないこと知りたいの？ The Animation", "episodes": null, "start_date": "2025-02-28"},
 {"anilist_id": 185070, "title": "宇宙人ムームー", "episodes": 24, "start_date": "2025-04-10", "streaming": [{"first_air_date": "2025-07-02", "time": "25:00", "episodes": 24, "platform": "d_anime", "platform_url": "https://animestore.docomo.ne.jp/", "url": "", "notes": "", "day_of_week": "Wednesday"}]},
 {"anilist_id": 185071, "title": "元カレとはできなかったセックスしてもいいですか?", "episodes": 1, "start_date": "2025-06-27", "end_date": "2025-06-27"},
-{"anilist_id": 185073, "title": "キミとアイドルプリキュア♪", "episodes": 49, "start_date": "2025-02-02"},
+{"anilist_id": 185073, "title": "キミとアイドルプリキュア♪", "episodes": 49, "start_date": "2025-02-02", "streaming": [{"first_air_date": "2025-07-01", "time": "24:00", "episodes": 49, "platform": "d_anime", "platform_url": "https://animestore.docomo.ne.jp/", "url": "", "notes": "", "day_of_week": "Tuesday"}]},
 {"anilist_id": 185084, "title": "LUPIN THE IIIRD THE MOVIE 不死身の血族", "episodes": 1, "start_date": "2025-06-27", "end_date": "2025-06-27"},
 {"anilist_id": 185166, "title": "憧れの女上司が、相部屋出張の隣のベッドで絶倫男に寝取られている", "episodes": null, "start_date": "2025-04-04"},
 {"anilist_id": 185213, "title": "機動戦士Gundam GQuuuuuuX", "episodes": 12, "start_date": "2025-04-09", "end_date": "2025-06-25"},
@@ -190,5 +190,5 @@
 {"anilist_id": 195033, "title": "危険な森 鬼ごっこ", "episodes": null, "start_date": "2025-09-26"},
 {"anilist_id": 195034, "title": "これってナ～ニ？", "episodes": null, "start_date": "2025-09-26"},
 {"anilist_id": 195068, "title": "ピュアピュア ぺろぺろ プリンセス", "episodes": null, "start_date": "2025-08-29"},
-{"anilist_id": 195209, "title": "傷だらけ聖女より報復をこめて", "episodes": null, "start_date": "2025-07-10"}
+{"anilist_id": 195209, "title": "傷だらけ聖女より報復をこめて", "episodes": null, "start_date": "2025-07-10", "streaming": [{"first_air_date": "2025-07-09", "time": "25:00", "episodes": null, "platform": "d_anime", "platform_url": "https://animestore.docomo.ne.jp/", "url": "", "notes": "", "day_of_week": "Wednesday"}]}
 ]
