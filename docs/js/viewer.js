@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
           if (!s.day_of_week || !s.first_air_date || !s.time) continue;
 
           const first = new Date(s.first_air_date);
+          const last = s.last_air_date ? new Date(s.last_air_date) : null;
           
           for (const day of days) {
-            if (day.weekday !== s.day_of_week || day.date < first) continue;
-           if (s.last_air_date && day.date > new Date(s.last_air_date)) continue;
+            if (day.weekday !== s.day_of_week || day.date < first || (last && day.date > last)) continue;
             day.entries.push({
               id: anime.anilist_id || anime.id || "",
               title: anime.title,
